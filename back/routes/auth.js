@@ -30,7 +30,7 @@ router.get('/logout', (req,res)=>{
 })
 
 router.get('/private',  checkIfLogin,(req,res)=>{
-  res.json({message:"bienvenido " + req.user.username})
+  res.json({message:"bienvenido " + req.user})
 })
 
 module.exports = router;
